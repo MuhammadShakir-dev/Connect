@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect with me</title>
+    <link rel="icon" type="images/png" href="https://cdn-icons-png.flaticon.com/512/2582/2582606.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            width: 90%;
+            min-height: 100vh;
+            margin: 0px auto 0px auto;
+            display: grid;
+            background-color: whitesmoke;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 8px;
+        }
+
+        .items1 {
+            background-color: rgb(31, 31, 31);
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            color: lightgray;
+            display: grid;
+        }
+
+        .items1:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 10px;
+        }
+
+        .fa-linkedin {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-linkedin:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+
+        .items2 {
+            background-color: rgb(31, 31, 31);
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            display: grid;
+            color: lightgray;
+        }
+
+        .items2:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 10px;
+            color: rgb(0, 0, 116);
+        }
+
+        .fa-instagram {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-instagram:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+
+        .items3 {
+            background-color: rgb(31, 31, 31);
+            grid-row: 2 / 4;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            display: grid;
+            color: lightgray;
+        }
+
+        .items3:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: rgb(0, 0, 116);
+        }
+
+        .fa-file {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-file:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+
+        .items4 {
+            background-color: rgb(31, 31, 31);
+            grid-row: 2 / 4;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            display: grid;
+            color: lightgray;
+        }
+
+        .items4:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: rgb(0, 0, 116);
+            border-radius: 10px;
+        }
+
+        .fa-github {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-github:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+        .items5 {
+            background-color: rgb(31, 31, 31);
+            grid-row: 3 / 5;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            display: grid;
+            color: lightgray;
+        }
+
+        .items5:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: rgb(0, 0, 116);
+            border-radius: 10px;
+        }
+
+        .fa-hashnode {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-hashnode:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+        .items6 {
+            background-color: rgb(31, 31, 31);
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            display: grid;
+            color: lightgrey;
+        }
+
+        .items6:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: rgb(0, 0, 116);
+            border-radius: 10px;
+        }
+
+        .fa-twitter {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-twitter:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+        .items7 {
+            background-color: rgb(31, 31, 31);
+            background-color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+            color: lightgray;
+            display: grid;
+        }
+
+        .items7:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: rgb(0, 0, 116);
+            border-radius: 10px;
+        }
+
+        .fa-paper-plane {
+            font-size: 80px;
+            padding: 15px;
+            align-self: center;
+            justify-self: center;
+            transition: all 0.5s ease;
+        }
+
+        .fa-paper-plane:hover {
+            font-size: 100px;
+            color: rgb(0, 0, 116);
+        }
+
+        a {
+            display: grid;
+            text-decoration: none;
+            text-align: center;
+            color: lightgray;
+            transition: all 0.5s ease;
+        }
+
+        a:hover {
+            color: rgb(0, 0, 116);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items1"><i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/muhammad-shakir-dev05/" target="_blank">Linkedin</a>
+        </div>
+
+        <div class="items2"><i class="fa-brands fa-instagram"></i>
+            <a href="" target="_blank">Instagram</a>
+        </div>
+
+        <div class="items3"><i class="fa-sharp fa-regular fa-file"></i>
+            <a href="https://muhammadshakir-dev.github.io/" target="_blank">Resume</a>
+        </div>
+
+        <div class="items4"><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/MuhammadShakir-dev" target="_blank">Github</a>
+        </div>
+
+        <div class="items5"><i class="fa-brands fa-hashnode"></i>
+            <a href="https://muhammadshakir.hashnode.dev/" target="_blank">Hashnode</a>
+        </div>
+
+        <div class="items6"><i class="fa-brands fa-twitter"></i>
+            <a href="https://twitter.com/areyoushakir" target="_blank">Twitter</a>
+        </div>
+
+        <div class="items7"><i class="fa-regular fa-paper-plane"></i>
+            <a href="mailto:chaudhryshakir67@gmail.com" target="_blank">Email</a>
+        </div>
+    </div>
+</body>
+
+</html>
